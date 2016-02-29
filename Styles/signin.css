@@ -1,0 +1,15 @@
+.input-field {
+	margin-top: 15px;
+}
+
+.form-signin .btn-full {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+#warning-msg {
+	color: red;
+}
