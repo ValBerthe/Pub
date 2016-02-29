@@ -24,7 +24,7 @@ function is_valid_password(id, password) {
 	$.ajax({
 		async	: false,
 		type	:'POST', 
-    	url		: "http://pub.jamaica-inn.net/fpdb/api.php?username=jorass&password=jorass&action=iou_get",
+    	url		: "http://pub.jamaica-inn.net/fpdb/api.php?",
     	data    : {	action : 'iou_get',
     			   	username: id,
     			  	password : password},
