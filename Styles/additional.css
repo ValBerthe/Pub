@@ -1,0 +1,8 @@
+.scrollableArea {
+	overflow-y: scroll;
+	height: 450px;
+}
+
+.hiddenn {
+	visibility: hidden;
+}

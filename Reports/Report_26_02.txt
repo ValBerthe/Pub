@@ -1,0 +1,16 @@
+WEEKLY FRIDAY REPORT - FEB 26
+
+MARIKA LJUNGBERG - FANSHI LIN - VALENTIN BERTHELOT
+
+1. Creation of the "Home", "Order Beer", "Bar Tender Mode" tabs on the website. Only Bootstrap and JQuery libraries are used in thte project.
+2. Allowed the JQuery code for loading the beer/prices/count data from the project's DB into a table displayed on the "Order Beer" tab html body.
+3. Creation of a recap panel, showing the customer's current cart.
+4. Enabled the drag & drop feature, from the beer table to the cart. The dragged item (beer) is not erased once dropped in the cart panel.
+5. Creation of the sign up page.
+
+WHAT NEXT :
+
+- Update of the total price after each beer drop.
+- Thoughts about showing the beer count to the customer.
+- Create something for the Bar Tender mode.
+- Make the boostrap theme authentic, unique and close to the pub's identity.
