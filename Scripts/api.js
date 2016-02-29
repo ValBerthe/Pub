@@ -81,7 +81,7 @@ xhr.addEventListener('readystatechange', function() {
 				if (parseInt(count) > 0) {
 					$('<tr id="pasdid" draggable="true" ondragstart="drag(event)"></tr>').appendTo(document.getElementById('beerTable'));
 				} else {
-					$('<tr id="pasdid" class="danger" style="display: table-row;"></tr>').appendTo(document.getElementById('beerTable'));
+					$('<tr id="pasdid" class="danger" style="display: none;"></tr>').appendTo(document.getElementById('beerTable'));
 				}
 				document.getElementById("pasdid").innerHTML = '<td id="pasdid1"></td><td id="pasdid2"></td><td id="pasdid3"></td><td id="pasdid4"></td><td id="pasdid5"></td><td id="pasdid6"></td><td id="pasdid7"></td>'
 				document.getElementById("pasdid1").innerHTML = name1;
