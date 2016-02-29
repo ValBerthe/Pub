@@ -1,8 +1,8 @@
-$(#showoosbeers).click(function() {
-	if ($(#showoosbeers:checked).length > 0) {
-		$(tr.danger).attr({class: "hiddenn"});
+$("#showoosbeers").click(function() {
+	if ($("#showoosbeers:checked").length < 1) {
+		$('.danger[style="display: table-row;"]').attr({style: 'display: none;'});
 	} else {
-		$(tr.hiddenn).attr({class: "danger"});
+		$('.danger[style="display: none;"]').attr({style: 'display: table-row;'});
 	}
-}
+});
 
