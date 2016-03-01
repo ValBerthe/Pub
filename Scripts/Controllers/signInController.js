@@ -7,7 +7,6 @@ $(function() {
 function signin() {
 	var id = $('#signin-id').val();
 	var password = $('#signin-password').val();
-	console.log(password);
 	if (is_valid_password(id, password)) {
 		console.log('valid');
 		$('#warning-msg').html('');
@@ -23,8 +22,8 @@ function is_valid_password(id, password) {
 	var res;
 	$.ajax({
 		async	: false,
-		type	:'POST', 
-    	url		: "http://pub.jamaica-inn.net/fpdb/api.php?",
+		type	:'GET', 
+    	url		: "http://pub.jamaica-inn.net/fpdb/api.php",
     	data    : {	action : 'iou_get',
     			   	username: id,
     			  	password : password},
@@ -36,6 +35,7 @@ function is_valid_password(id, password) {
     		}
 		}
 	});
+	console.log(res);
 	return res;
 }
 
