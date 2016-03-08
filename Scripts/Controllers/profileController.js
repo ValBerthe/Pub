@@ -29,13 +29,38 @@ function prepare_data() {
 	});
 }
 
-$(document).ready(function() {
+$(function() {
 	$(".userid").html("Hi " + window.localStorage.getItem('user') + " !");
 	$(".username").html(firstname + ' ' + lastname);
 	$(".credit").html("Your credit: <label class='credit-amount'>" + credit + "</label>");
+	
+	change_credit_color();
+
+	show_tab_info();
+})
+
+$(function() {
+	$('a').click(function() {
+		$('li').removeClass('active');
+		$(this).parent().addClass('active');
+		show_tab_info();
+	})
+})
+
+function change_credit_color() {
 	if (credit < 0) {
 		$(".credit-amount").css("color", "red");
 	} else {
 		$(".credit-amount").css("color", "green");
 	}
-})
+}
+
+function show_tab_info() {
+	if ($(".purchases-tab").hasClass("active")) {
+		$(".purchases-container").show();
+		$(".payments-container").hide();
+	} else {
+		$(".purchases-container").hide();
+		$(".payments-container").show();
+	}
+}

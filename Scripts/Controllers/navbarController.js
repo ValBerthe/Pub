@@ -16,8 +16,8 @@ $(function() {
 	$('a').click(function() {
 		// active_tab(this);
 		console.log("haha");
-		$('li').removeClass(active);
-		$(this).parent().addClass(active);
+		$('li').removeClass('active');
+		$(this).parent().addClass('active');
 	})
 });
 
@@ -27,6 +27,6 @@ function signout() {
 } 
 
 function active_tab(tab) {
-	$('li').removeClass(active);
-	$(tab).addClass(active);
+	$('li').removeClass('active');
+	$(tab).addClass('active');
 }
