@@ -6,7 +6,9 @@ $(function() {
 
 function signin() {
 	var id = $('#signin-id').val();
+	console.log(id);
 	var password = $('#signin-password').val();
+	console.log(password);
 	if (is_valid_password(id, password)) {
 		console.log('valid');
 		$('#warning-msg').html('');
