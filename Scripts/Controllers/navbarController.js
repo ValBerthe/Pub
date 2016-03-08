@@ -14,8 +14,6 @@ $(function() {
 	})
 
 	$('a').click(function() {
-		// active_tab(this);
-		console.log("haha");
 		$('li').removeClass('active');
 		$(this).parent().addClass('active');
 	})
