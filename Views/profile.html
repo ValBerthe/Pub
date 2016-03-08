@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../Resources/favicon.ico">
+
+	<title>The Flying Dutchman</title>
+
+	<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../Styles/additional.css">
+	<link rel="stylesheet" type="text/css" href="../Styles/profile.css">
+
+	<link rel="import" id="header" href="navbar.html">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse">
+
+	</nav>
+
+	<div class="container text-center">
+		<row>
+			<div class="col-lg-3 col-lg-offset-1 text-left">
+				<image class="avatar" src="../Resources/pirate.png">
+				<label class="userid"></label>
+				<label class="username"></label>
+				<hr>
+				<label class="credit"></label>
+			</div>
+		</row>
+	</div>
+
+	<script type="text/javascript">
+		var getImportHeader = document.querySelector('#header');
+		var getContentHeader = getImportHeader.import.querySelector('.container');
+		document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
+	</script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../Scripts/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../Scripts/Controllers/navbarController.js"></script>
+    <script type="text/javascript" src="../Scripts/Controllers/profileController.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+</html>
