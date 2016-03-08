@@ -29,16 +29,19 @@
 		<row>
 			<div class="col-lg-3 col-lg-offset-1 text-left">
 				<image class="avatar" src="../Resources/pirate.png">
-				<label class="userid"></label>
-				<label class="username"></label>
-				<hr>
-				<label class="credit"></label>
-			</div>
-			<div class="col-lg-6 text-left">
-			<h2>Your purchases</h2>
-			</div>
-		</row>
-	</div>
+					<label class="userid"></label>
+					<label class="username"></label>
+					<hr>
+					<label class="credit"></label>
+				</div>
+				<div class="col-lg-6 text-left">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Your Purchases</a></li>
+						<li><a href="#">Your Payments</a></li>
+					</ul>
+				</div>
+			</row>
+		</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -50,10 +53,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
     <script type="text/javascript">
-        var getImportHeader = document.querySelector('#header');
-        var getContentHeader = getImportHeader.import.querySelector('.container');
-        document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
-        $('.button-1').addClass('active');
+    	var getImportHeader = document.querySelector('#header');
+    	var getContentHeader = getImportHeader.import.querySelector('.container');
+    	document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
+    	$('.button-1').addClass('active');
     </script>
 </body>
 </html>
