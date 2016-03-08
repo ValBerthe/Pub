@@ -34,14 +34,12 @@
 				<hr>
 				<label class="credit"></label>
 			</div>
+			<div class="col-lg-6 text-left">
+			<h2>Your purchases</h2>
+			</div>
 		</row>
 	</div>
 
-	<script type="text/javascript">
-		var getImportHeader = document.querySelector('#header');
-		var getContentHeader = getImportHeader.import.querySelector('.container');
-		document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
-	</script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -50,5 +48,12 @@
     <script type="text/javascript" src="../Scripts/Controllers/navbarController.js"></script>
     <script type="text/javascript" src="../Scripts/Controllers/profileController.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <script type="text/javascript">
+        var getImportHeader = document.querySelector('#header');
+        var getContentHeader = getImportHeader.import.querySelector('.container');
+        document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
+        $('.button-1').addClass('active');
+    </script>
 </body>
 </html>

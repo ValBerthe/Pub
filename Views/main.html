@@ -28,11 +28,6 @@
       <img src="../Resources/flying.jpg" width="100%">
     </div>
 
-    <script type="text/javascript">
-        var getImportHeader = document.querySelector('#header');
-        var getContentHeader = getImportHeader.import.querySelector('.container');
-        document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
-    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -40,5 +35,12 @@
     <script src="../bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="../Scripts/Controllers/navbarController.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <script type="text/javascript">
+        var getImportHeader = document.querySelector('#header');
+        var getContentHeader = getImportHeader.import.querySelector('.container');
+        document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
+        $('.home').addClass('active');
+    </script>
   </body>
 </html>
