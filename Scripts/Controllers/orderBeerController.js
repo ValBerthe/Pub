@@ -23,23 +23,23 @@ function drop(ev) {
     alert(document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text() + 'div">' + copie.text() + '</div>'));*/
     /*alert(document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text + 'div">' + copie.text() + "<span"));*/
     
-    if (document.getElementById("beerCart").innerHTML.indexOf(copie.text()) > -1) {
-    	if (document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text() + 'div">' + copie.text() + '</div>') > -1) {
+    if (document.getElementById("beerCart").innerHTML.indexOf(copie.text()) > -1) { // If the beverage name is already in the cart
+    	if (document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text() + 'div">' + copie.text() + '</div>') > -1) { //If the div containing the beverage is already in the cart
     		var newBadge = document.createElement("SPAN");
 	    	var $newBadge = $(newBadge);
 	    	$newBadge.attr({id: copie.text() + "id"});
 	    	$newBadge.attr({class: " badge pull-right"});
 	    	$newBadge[0].appendChild(document.createTextNode("2"));
 	    	document.getElementById(copie.text() + "div").appendChild($newBadge[0]);
-	    	document.getElementById("totalBeer").innerHTML = (parseInt(document.getElementById("totalBeer").innerHTML) + parseInt(prix.text().substring(0,3))).toString() + " SEK";
-    	} else {
+	    	document.getElementById("totalBeer").innerHTML = (parseInt(document.getElementById("totalBeer").innerHTML) + parseInt(prix.text().substring(0,3))).toString() + " SEK"; // Update prise
+    	} else { //If the div is not present
     		
-    		document.getElementById(copie.text() + "id").innerHTML = (parseInt(document.getElementById(copie.text() + "id").innerHTML) + 1).toString();
+    		document.getElementById(copie.text() + "id").innerHTML = (parseInt(document.getElementById(copie.text() + "id").innerHTML) + 1).toString(); // Increase the number in the badge
     		document.getElementById("totalBeer").innerHTML = (parseInt(document.getElementById("totalBeer").innerHTML) + parseInt(prix.text().substring(0,3))).toString() + " SEK";
 
     	}
 
-    } else {
+    } else { // If the beverage is not yet in the cart
     	var htmlCopy = document.createElement("DIV");
     	var HR = document.createElement("HR");
     	var $htmlCopy = $(htmlCopy);
