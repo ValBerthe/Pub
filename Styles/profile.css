@@ -1,0 +1,40 @@
+a {
+	color: grey;
+}
+
+a .active {
+	color: black;
+}
+
+.avatar {
+	width: 80%;
+	margin-top: 15%;
+}
+
+.userid {
+	font-size: 3em;
+	display: block;
+}
+
+.username {
+	color: grey;
+	font-size: 1.4em;
+	display: block;
+}
+
+.credit {
+	font-size: 1.3em;
+}
+
+.nav-tabs {
+	margin-top: 5%;
+	font-size: 1.1em;
+}
+
+.purchases-container {
+	margin-top: 3%;
+}
+
+.payments-container {
+	margin-top: 3%;
+}
