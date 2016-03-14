@@ -117,7 +117,7 @@ function change_tab_info() {
 function show_user_info() {
 	$(".userid").html("Hi " + window.localStorage.getItem('user') + " !");
 	$(".username").html(firstname + ' ' + lastname);
-	$(".credit").html("Your credit: <label class='credit-amount'>" + credit + "</label>");
+	$(".credit-amount").html(' ' + credit);
 }
 
 function show_purchases_info() {

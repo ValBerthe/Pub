@@ -32,24 +32,24 @@
 					<label class="userid"></label>
 					<label class="username"></label>
 					<hr>
-					<label class="credit"></label>
+					<label class="credit t-credit">Your Credit: </label><label class='credit credit-amount'></label>
 					<hr>
 				</div>
 				<div class="col-lg-7 text-left">
 					<ul class="nav nav-tabs">
-						<li class="purchases-tab active"><a href="#">Your Purchases</a></li>
-						<li class="payments-tab"><a href="#">Your Payments</a></li>
+						<li class="purchases-tab active"><a class="t-purchases" href="#">Your Purchases</a></li>
+						<li class="payments-tab"><a class="t-payments" href="#">Your Payments</a></li>
 					</ul>
 					<div class="purchases-container">
 						<table class="table table-striped">
 							<thead>
 								<tr>
-									<th>Name</th>
-									<th>Name 2</th>
-									<th>Transaction ID</th>
-									<th>Beer ID</th>
+									<th class="t-name">Name</th>
+									<th class="t-name2">Name 2</th>
+									<th class="t-trans">Transaction ID</th>
+									<th class="t-beerid">Beer ID</th>
 									<th>Time Stamp</th>
-									<th>Price</th>
+									<th class="t-price">Price</th>
 								</tr>
 							</thead>
 							<tbody class="purchases-tbody">
@@ -61,9 +61,9 @@
 						<table class="table table-striped">
 							<thead>
 								<tr>
-									<th>Transaction ID</th>
+									<th class="t-trans">Transaction ID</th>
 									<th>Time Stamp</th>
-									<th>Amount</th>
+									<th class="t-amount">Amount</th>
 								</tr>
 							</thead>
 							<tbody class="payments-tbody">

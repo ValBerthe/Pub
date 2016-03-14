@@ -24,4 +24,68 @@
         <uk>Do not have an account?</uk>
         <sv>Har du inte ett konto?</sv>
     </translation>
+    <translation id="t-orderinstru">
+    	<uk>Choose your favourite beer and drop it to the cart:</uk>
+    	<sv>Välj din favorit öl och släppa den i varukorgen:</sv>
+    </translation>
+    <translation id="t-ordertitle">
+    	<uk>Beverages! Beers!</uk>
+    	<sv>Drycker! öl!</sv>
+    </translation>
+    <translation id="t-showunavailable">
+    	<uk>Show unavailable beers</uk>
+    	<sv>Visar icke tillgängliga öl</sv>
+    </translation>
+    <translation id="t-cart">
+    	<uk>Your cart:</uk>
+    	<sv>Din vagn:</sv>
+    </translation>
+    <translation id="t-name">
+    	<uk>Name</uk>
+    	<sv>Namn</sv>
+    </translation>
+    <translation id="t-pay">
+    	<uk>Pay</uk>
+    	<sv>Betala</sv>
+    </translation>
+    <translation id="t-type">
+    	<uk>Type</uk>
+    	<sv>Typ</sv>
+    </translation>
+    <translation id="t-count">
+    	<uk>Count</uk>
+    	<sv>Räkna</sv>
+    </translation>
+    <translation id="t-price">
+    	<uk>Price</uk>
+    	<sv>Pris</sv>
+    </translation>
+    <translation id="t-credit">
+    	<uk>Your credit:</uk>
+    	<sv>Din kredit:</sv>
+    </translation>
+    <translation id="t-purchases">
+    	<uk>Your Purchases</uk>
+    	<sv>Dina inköp</sv>
+    </translation>
+    <translation id="t-payments">
+    	<uk>Your Payments</uk>
+    	<sv>Dina betalningar</sv>
+    </translation>
+    <translation id="t-name2">
+    	<uk>Name 2</uk>
+    	<sv>Namn 2</sv>
+    </translation>
+    <translation id="t-trans">
+    	<uk>Transaction ID</uk>
+    	<sv>Transaktions ID</sv>
+    </translation>
+    <translation id="t-beerid">
+    	<uk>Beer ID</uk>
+    	<sv>öl ID</sv>
+    </translation>
+    <translation id="t-amount">
+    	<uk>Amount</uk>
+    	<sv>Belopp</sv>
+    </translation>
 </translations>

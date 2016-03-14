@@ -1,7 +1,7 @@
 $(function() {
 	if (window.localStorage.getItem('user') == null) {
-		$(".button-1").html('<a href="./signin.html"> Sign Up</a>');
-		$(".button-2").html('<a href="./signin.html"> Sign In</a>');
+		$(".button-1").html('<a class="t-signup" href="./signin.html"> Sign Up</a>');
+		$(".button-2").html('<a class="t-signin" href="./signin.html"> Sign In</a>');
 	} else {
 		$(".button-1").html('<a href="profile.html">' + window.localStorage.getItem('user') + '</a>');
 		$(".button-2").html('<a class="btn-signout" href="#"> Sign Out</a>');

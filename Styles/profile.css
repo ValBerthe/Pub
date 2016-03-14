@@ -26,8 +26,12 @@ a .active {
 	font-size: 1.3em;
 }
 
+.credit-amount {
+	margin-left: 0.5em;
+}
+
 .nav-tabs {
-	margin-top: 5%;
+	margin-top: 8%;
 	font-size: 1.1em;
 }
 
