@@ -1,101 +1,101 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../Resources/favicon.ico">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../Resources/favicon.ico">
 
-    <title>The Flying Dutchman</title>
+  <title>The Flying Dutchman</title>
 
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../Styles/additional.css">
+  <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../Styles/additional.css">
 
-    <link rel="import" id="header" href="navbar.html">
+  <link rel="import" id="header" href="navbar.html">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-inverse">
-      
-    </nav>
-
-    <div class="well">
-      <div class="container">
-        
-                      <h1>
-                        Beverages ! Beers !
-                      </h1>
-                      <p>Choose your favourite beer and drop it to the cart :</p>
-        </div>
-      </div>
-
-
-
-    <div class="container">
-      <div class="checkbox">
-      <label><input id="showoosbeers" type="checkbox" value="" unchecked>Show unavailable beers</label>
-      </div>
-    </div>
-
-
-
-    <div class="container">
+  <nav class="navbar navbar-inverse">
     
-                
+  </nav>
 
+  <div class="well">
+    <div class="container">
       
-          <div class="row"> 
+      <h1>
+        Beverages ! Beers !
+      </h1>
+      <p>Choose your favourite beer and drop it to the cart :</p>
+    </div>
+  </div>
 
-                <div class="col-lg-3 pull-right">
-                      <div class="panel panel-primary">
-                        <div class="panel-heading">Your cart :</div>
-                        <div class="panel-body" id="beerCart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                        <div class="panel-footer">Total : <strong class="pull-right" id="totalBeer">0 SEK</strong></div>
-                        
-                      </div>
-                    <button type="button" class="btn btn-success btn-block">Pay</button>
-                </div>
-      
-     
-                <div class="col-lg-9 scrollableArea">
-                        <table class="table" id="beerTable">
-                                        <tr id="begin">
-                                          <th>
-                                            Name
-                                          </th>
-                                          <th>
-                                            Type
-                                          </th>
-                                          <th>
-                                            Count
-                                          </th>
-                                          <th>
-                                            Price
-                                          </th>
-                                        </tr>
-                        </table>
-                  </div>
-                  
-          </div>
+
+
+  <div class="container">
+    <div class="checkbox">
+      <label><input id="showoosbeers" type="checkbox" value="" unchecked>Show unavailable beers</label>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    
+    
+
+    
+    <div class="row"> 
+
+      <div class="col-lg-3 pull-right">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Your cart :</div>
+          <div class="panel-body" id="beerCart" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="panel-footer">Total : <strong class="pull-right" id="totalBeer">0 SEK</strong></div>
+          
+        </div>
+        <button type="button" class="btn btn-success btn-block">Pay</button>
       </div>
+      
+      
+      <div class="col-lg-9 scrollableArea">
+        <table class="table" id="beerTable">
+          <tr id="begin">
+            <th>
+              Name
+            </th>
+            <th>
+              Type
+            </th>
+            <th>
+              Count
+            </th>
+            <th>
+              Price
+            </th>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+  </div>
 
 
-    <script src="../Scripts/jquery.js"></script>
-    <script src="../Scripts/Controllers/orderBeerController.js"></script>
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="../Scripts/Controllers/navbarController.js"></script>
-    <script type="text/javascript" src="../Scripts/Controllers/languageTranslator.js"></script>
+  <script src="../Scripts/jquery.js"></script>
+  <script src="../Scripts/Controllers/orderBeerController.js"></script>
+  <script src="../bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../Scripts/Controllers/navbarController.js"></script>
+  <script type="text/javascript" src="../Scripts/Controllers/languageTranslator.js"></script>
 
-    <script type="text/javascript">
-        var getImportHeader = document.querySelector('#header');
-        var getContentHeader = getImportHeader.import.querySelector('.container');
-        document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
-        $('.order').addClass('active');
-    </script>
-  </body>
+  <script type="text/javascript">
+    var getImportHeader = document.querySelector('#header');
+    var getContentHeader = getImportHeader.import.querySelector('.container');
+    document.querySelector('.navbar').appendChild(document.importNode(getContentHeader, true));
+    $('.order').addClass('active');
+  </script>
+</body>
 </html>

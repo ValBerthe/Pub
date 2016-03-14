@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
     <translation id="t-home">
-        <uk>home</uk>
-        <sv>hemma</sv>
+        <uk>Home</uk>
+        <sv>Hemma</sv>
     </translation>
     <translation id="t-order">
-        <uk>order</uk>
-        <sv>ordning</sv>
+        <uk>Order</uk>
+        <sv>Ordning</sv>
+    </translation>
+    <translation id="t-btender">
+        <uk>Bar Tender</uk>
+        <sv>Bar Anbud</sv>
+    </translation>
+    <translation id="t-signup">
+        <uk>Sign Up</uk>
+        <sv>Registrering</sv>
+    </translation>
+    <translation id="t-signin">
+        <uk>Sign In</uk>
+        <sv>Logga in</sv>
+    </translation>
+    <translation id="t-asksignup">
+        <uk>Do not have an account?</uk>
+        <sv>Har du inte ett konto?</sv>
     </translation>
 </translations>

@@ -1,3 +1,5 @@
+change_language();
+
 $(function() {
 	$('.flag').click(function() {
 		get_language(this);
@@ -15,6 +17,9 @@ function get_language(flag) {
 
 function change_language() {
     var language = window.localStorage.getItem('lang');
+    if (language == undefined) {
+        language = 'uk';
+    }
     $.ajax({
         url: '../../language.xml',
         success: function(xml) {
