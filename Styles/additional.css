@@ -6,3 +6,11 @@
 .hiddenn {
 	visibility: hidden;
 }
+
+.flag {
+	display: inline;
+	margin-top: 17%;
+	padding-right: 1em;
+	height: 2.5em;
+	cursor: pointer;
+}

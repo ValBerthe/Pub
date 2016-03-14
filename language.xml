@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <translation id="t-home">
+        <uk>home</uk>
+        <sv>hemma</sv>
+    </translation>
+    <translation id="t-order">
+        <uk>order</uk>
+        <sv>ordning</sv>
+    </translation>
+</translations>
