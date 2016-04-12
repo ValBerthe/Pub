@@ -19,9 +19,6 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     copie = $("#" + data + " td:first").clone();
   	prix = $("#" + data + " td:eq(3)").clone();
-    /*alert(document.getElementById("beerCart").innerHTML);
-    alert(document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text() + 'div">' + copie.text() + '</div>'));*/
-    /*alert(document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text + 'div">' + copie.text() + "<span"));*/
     
     if (document.getElementById("beerCart").innerHTML.indexOf(copie.text()) > -1) { // If the beverage name is already in the cart
     	if (document.getElementById("beerCart").innerHTML.indexOf('<div id="' + copie.text() + 'div">' + copie.text() + '</div>') > -1) { //If the div containing the beverage is already in the cart
@@ -33,12 +30,9 @@ function drop(ev) {
 	    	document.getElementById(copie.text() + "div").appendChild($newBadge[0]);
 	    	document.getElementById("totalBeer").innerHTML = (parseInt(document.getElementById("totalBeer").innerHTML) + parseInt(prix.text().substring(0,3))).toString() + " SEK"; // Update prise
     	} else { //If the div is not present
-    		
     		document.getElementById(copie.text() + "id").innerHTML = (parseInt(document.getElementById(copie.text() + "id").innerHTML) + 1).toString(); // Increase the number in the badge
     		document.getElementById("totalBeer").innerHTML = (parseInt(document.getElementById("totalBeer").innerHTML) + parseInt(prix.text().substring(0,3))).toString() + " SEK";
-
     	}
-
     } else { // If the beverage is not yet in the cart
     	var htmlCopy = document.createElement("DIV");
     	var HR = document.createElement("HR");
@@ -102,14 +96,8 @@ xhr.addEventListener('readystatechange', function() {
 					document.getElementById("pasdid3").innerHTML = "Out of stock !"
 				}
 				$('#pasdid3').attr('id', "id3");
-				/*document.getElementById("pasdid3").innerHTML = sb_price;
-				$('#pasdid3').attr('id', "id3");*/
 				document.getElementById("pasdid4").innerHTML = pu_price + " SEK";
 				$('#pasdid4').attr('id', "id4");
-				/*document.getElementById("pasdid5").innerHTML = beer;
-				$('#pasdid5').attr('id', "id5");*/
-				/*document.getElementById("pasdid7").innerHTML = price;
-				$('#pasdid7').attr('id', "id7");*/
 				$('#pasdid').attr('id',i.toString());
 			}
 		}

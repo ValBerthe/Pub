@@ -147,7 +147,6 @@ function show_purchases_info() {
 	}
 }
 
-//show payments list
 function show_payments_info() {
 	var payments_no = payments_res.length;
 	var tr_content;
