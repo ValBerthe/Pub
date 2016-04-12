@@ -6,6 +6,7 @@ var payments_res;
 
 prepare_data();
 
+//call coresponding functions to prepare all the data we need
 function prepare_data() {
 	var id = window.localStorage.getItem('user');
 	var password = window.localStorage.getItem('user');
@@ -14,6 +15,7 @@ function prepare_data() {
 	prepare_data_for_payments(id, password);
 }
 
+//prepare user general infomation
 function prepare_data_for_userinfo(id, password) {
 	$.ajax({
 		async	: false,
@@ -36,6 +38,7 @@ function prepare_data_for_userinfo(id, password) {
 	});
 }
 
+//prepare user purchases information
 function prepare_data_for_purchases(id, password) {
 	$.ajax({
 		async	: false,
@@ -54,6 +57,7 @@ function prepare_data_for_purchases(id, password) {
 	});
 }
 
+//prepare user payments information
 function prepare_data_for_payments(id, password) {
 	$.ajax({
 		async	: false,
@@ -72,6 +76,7 @@ function prepare_data_for_payments(id, password) {
 	});
 }
 
+//function to display all the information in the page
 $(function() {
 	$('a').click(function() {
 		$('li').removeClass('active');
@@ -84,6 +89,8 @@ $(function() {
 	show_tab_info();
 })
 
+//display credit amount in correct color
+//red for negative balance, green for positive balance
 function change_credit_color() {
 	if (credit < 0) {
 		$(".credit-amount").css("color", "red");
@@ -92,6 +99,7 @@ function change_credit_color() {
 	}
 }
 
+//show payments and puschases list
 function show_tab_info() {
 	show_purchases_info();
 	show_payments_info();
@@ -104,6 +112,7 @@ function show_tab_info() {
 	}
 }
 
+//show the correct information when the 2 tabs (purchases and payments) are clicked
 function change_tab_info() {
 	if ($(".purchases-tab").hasClass("active")) {
 		$(".purchases-container").show();
@@ -114,12 +123,14 @@ function change_tab_info() {
 	}
 }
 
+//show basic user information
 function show_user_info() {
 	$(".userid").html("Hi " + window.localStorage.getItem('user') + " !");
 	$(".username").html(firstname + ' ' + lastname);
 	$(".credit-amount").html(' ' + credit);
 }
 
+//show purchases list
 function show_purchases_info() {
 	var purchases_no = purchases_res.length;
 	var tr_content;
@@ -136,8 +147,9 @@ function show_purchases_info() {
 	}
 }
 
+//show payments list
 function show_payments_info() {
-var payments_no = payments_res.length;
+	var payments_no = payments_res.length;
 	var tr_content;
 	for (var i = 0; i < payments_no; i++) {
 		tr_content = '<tr>';
