@@ -1,4 +1,4 @@
-
+<!-- This is the html page for user profile page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +27,7 @@
 
 	<div class="container text-center">
 		<row>
+			<!-- user info column -->
 			<div class="col-lg-3 col-lg-offset-1 text-left">
 				<image class="avatar" src="../Resources/pirate.png">
 					<label class="userid"></label>
@@ -35,11 +36,13 @@
 					<label class="credit t-credit">Your Credit: </label><label class='credit credit-amount'></label>
 					<hr>
 				</div>
+				<!-- user purchases info list and payments info list column -->
 				<div class="col-lg-7 text-left">
 					<ul class="nav nav-tabs">
 						<li class="purchases-tab active"><a class="t-purchases" href="#">Your Purchases</a></li>
 						<li class="payments-tab"><a class="t-payments" href="#">Your Payments</a></li>
 					</ul>
+					<!-- user purchases info container -->
 					<div class="purchases-container">
 						<table class="table table-striped">
 							<thead>
@@ -57,6 +60,7 @@
 							</tbody>
 						</table>
 					</div>
+					<!-- user payments info container -->
 					<div class="payments-container">
 						<table class="table table-striped">
 							<thead>
@@ -85,6 +89,7 @@
     <script type="text/javascript" src="../Scripts/Controllers/languageTranslator.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
+    <!-- import header -->
     <script type="text/javascript">
     	var getImportHeader = document.querySelector('#header');
     	var getContentHeader = getImportHeader.import.querySelector('.container');
