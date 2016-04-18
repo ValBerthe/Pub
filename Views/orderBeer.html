@@ -1,4 +1,4 @@
-
+<!-- This is the html page for beer ordering page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +46,16 @@
 	</div>
 	</div>
 
+
+	<link rel="import" id="header" href="navbar.html">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+
+	</nav>
+	<!-- beer ordering page header -->
+
 	<div class="well">
 		<div class="container">
 			<h1 class="t-ordertitle">
@@ -55,18 +65,15 @@
 		</div>
 	</div>
 
-
-
 	<div class="container">
 		<div class="checkbox">
 			<label><input id="showoosbeers" type="checkbox" value="" unchecked class="t-showunavailable">Show unavailable beers</label>
 		</div>
 	</div>
 
-
-
 	<div class="container">
 		<div class="row"> 
+			<!-- cart column -->
 			<div class="col-lg-3 pull-right">
 				<div class="panel panel-primary">
 					<div class="panel-heading t-cart">Your cart :</div>
@@ -78,8 +85,7 @@
 				</div>
 				<button type="button" class="btn btn-success btn-block t-pay">Pay</button>
 			</div>
-
-
+			<!-- beer list column -->
 			<div class="col-lg-9 scrollableArea">
 				<table class="table" id="beerTable">
 					<tr id="begin">
@@ -98,10 +104,8 @@
 					</tr>
 				</table>
 			</div>
-
 		</div>
 	</div>
-
 
 	<script src="../Scripts/jquery.js"></script>
 	<script src="../Scripts/Controllers/orderBeerController.js"></script>
@@ -109,6 +113,7 @@
 	<script type="text/javascript" src="../Scripts/Controllers/navbarController.js"></script>
 	<script type="text/javascript" src="../Scripts/Controllers/languageTranslator.js"></script>
 
+	<!-- import header -->
 	<script type="text/javascript">
 		var getImportHeader = document.querySelector('#header');
 		var getContentHeader = getImportHeader.import.querySelector('.container');

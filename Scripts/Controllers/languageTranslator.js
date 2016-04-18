@@ -1,5 +1,6 @@
 change_language();
 
+//display the page in correct language when the flags are clicked
 $(function() {
 	$('.flag').click(function() {
 		get_language(this);
@@ -7,6 +8,7 @@ $(function() {
 	});
 });
 
+//get the language user wants to change to
 function get_language(flag) {
 	if ($(flag).hasClass('uk')) {
 		window.localStorage.setItem('lang', 'uk');
@@ -15,6 +17,7 @@ function get_language(flag) {
 	}
 }
 
+//change the language
 function change_language() {
     var language = window.localStorage.getItem('lang');
     if (language == undefined) {
